@@ -23,6 +23,20 @@ theme.
 /*----------------------------------------------------*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
+header nav.navbar div.container a.navbar-brand {
+  color: #ffffff;
+  font-size: 1.500em;
+  height: 70px;
+}
+
+header nav.navbar div.container a.navbar-brand small {
+  display: block;
+  font-size: 0.650em;
+  font-family: 'Century Gothic';
+  text-transform: capitalize;
+}
+
 body {
   line-height: 25px;
   font-size: 16px;
