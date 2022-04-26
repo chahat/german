@@ -24,18 +24,14 @@ theme.
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 
-header nav.navbar div.container a.navbar-brand {
-  color: #ffffff;
-  font-size: 1.500em;
-  height: 70px;
+.logo_h {
+    display: flex;
+    align-items: center;
+    color: #002347 !important;
+    font-family: 'Century Gothic';
+    font-size: 1.500em;
 }
 
-header nav.navbar div.container a.navbar-brand small {
-  display: block;
-  font-size: 0.650em;
-  font-family: 'Century Gothic';
-  text-transform: capitalize;
-}
 
 body {
   line-height: 25px;
@@ -341,11 +337,22 @@ button:focus {
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
+@keyframes changeBg{
+   33% {background-image: url(../img/banner/banner_swissflag.jpg);}
+   66% {background-image: url(../img/banner/banner_zurich.jpg);}
+}
+
 .home_banner_area {
   z-index: 1;
   min-height: 900px;
   position: relative;
-  /*background: url(../img/banner/home-banner.jpg) no-repeat center;*/
+  animation-name: changeBg;
+  animation-iteration-count: infinite;
+  animation-duration: 21s; /* set this */
+  animation-delay: 7s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  background: url(../img/banner/home-banner.jpg) no-repeat center;
   background-size: cover; }
   .home_banner_area .banner_inner {
     position: absolute;
