@@ -271,6 +271,7 @@ Vor einigen Jahren war ich auch als Beraterin am Goethe Institut tätig. Zu mein
               <h3>Demo Class for Free</h3>
               <p>It is high time for learning</p>
               <form data-netlify="true"
+                    netlify-honeypot="bot-field"
                   name="contact"
                 class="form_area"
                 id="myForm"
@@ -278,6 +279,11 @@ Vor einigen Jahren war ich auch als Beraterin am Goethe Institut tätig. Zu mein
               >
                 <div class="row">
                   <div class="col-lg-12 form_group">
+                    <p class="hidden">
+                      <label>
+                        Don’t fill this out if you’re human: <input name="bot-field" />
+                      </label>
+                    </p>
                     <input
                       name="name"
                       placeholder="Your Name"
