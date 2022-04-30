@@ -32,6 +32,20 @@ theme.
     font-size: 1.500em;
 }
 
+.badge {
+    background-color: #002347 !important;
+    display: inline-block;
+    padding: 0.25rem 0.45rem;
+    font-size: .75rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.6rem;
+    margin-right: 0.25rem;
+}
 
 body {
   line-height: 25px;
